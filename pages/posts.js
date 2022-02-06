@@ -3,12 +3,13 @@ import Layout from "@components/Layout";
 import React from "react";
 import { useState } from "react";
 import CardPost from "@components/CardPost";
-import mockPosts from "../utils/posts.json";
+import MockPosts from "../utils/posts.json";
 import SectionHeader from "@components/SectionHeader";
 import Head from "next/head";
 
 export default function posts() {
-  const [post, setPost] = useState(mockPosts);
+  const [post, setPost] = useState(MockPosts);
+
   return (
     <>
       <Layout>
