@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import InfoPost from "./InfoPost";
@@ -9,10 +10,13 @@ export default function FeaturedPost() {
         <div className="px-4 lg:w-8/12 md:w-7/12 w-full mb-4 md:mb-0">
           <Link href={"/detail"}>
             <a>
-              <img
+              <Image
                 src="/img/featured-thumbnail.png"
                 alt="Featured Thumbnail"
                 className=" rounded-xl w-full"
+                width="100%"
+                height="50%"
+                layout="responsive"
               />
             </a>
           </Link>
