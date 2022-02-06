@@ -8,7 +8,7 @@ import SectionHeader from "@components/SectionHeader";
 import Head from "next/head";
 
 export default function posts() {
-  const [post, setPost] = useState(MockPosts);
+  const [Post, setPost] = useState(MockPosts);
 
   return (
     <>
@@ -18,7 +18,7 @@ export default function posts() {
         </Head>
 
         <Container>
-          {!post.length ? (
+          {!Post.length ? (
             <div className=" text-center p-20">
               <h1 className=" text-6xl">No Result... </h1>
               <p className=" text-xl mt-4 text-white/60 md:w-6/12 mx-auto">
@@ -30,7 +30,7 @@ export default function posts() {
             <>
               <SectionHeader>UI Design</SectionHeader>
               <div className="flex flex-wrap -mx-4 mt-6">
-                {post.map((post) => (
+                {Post.map((post) => (
                   <div className=" md:w-4/12 w-full px-4" key={post.id}>
                     <CardPost {...post} />
                   </div>
