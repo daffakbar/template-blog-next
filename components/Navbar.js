@@ -27,7 +27,7 @@ export default function Navbar() {
       <nav className=" py-10">
         <Container>
           <div className="flex items-center">
-            <div className=" w-3/12 lg:hidden">
+            <div className=" w-3/12 lg:hidden ">
               <button
                 onClick={() => {
                   setOffCanvas(!offCanvas);
@@ -110,7 +110,7 @@ export default function Navbar() {
               </button>
             </div>
             <div
-              className={`lg:w-7/12 lg:bg-none lg:static lg:h-auto lg:p-0  w-full bg-gradient-to-b from-gray-600 to-gray-900 fixed top-0 h-full p-10 transition-all  ${
+              className={`lg:w-7/12 lg:bg-none lg:static lg:h-auto lg:p-0  w-full bg-gradient-to-b from-gray-600 to-gray-900 fixed top-0 h-full p-10 transition-all z-50  ${
                 offCanvas ? "left-0" : "-left-full"
               } `}
             >
@@ -224,7 +224,7 @@ export default function Navbar() {
               </button>
               <input
                 type="text"
-                className=" bg-gray-700 py-3 w-full lg:rounded-full rounded-xl bg-search pl-12"
+                className=" bg-gray-700 py-3 w-full lg:rounded-full rounded-xl bg-search pl-12 z-50"
                 placeholder="Search ..."
               />
             </div>
