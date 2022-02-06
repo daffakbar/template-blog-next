@@ -4,6 +4,7 @@ import Container from "@components/Container";
 import Layout from "@components/Layout";
 import PostAuthor from "@components/PostAuthor";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function detail() {
   return (
@@ -29,10 +30,14 @@ export default function detail() {
           />
         </div>
         <div className=" md:w-10/12 w-full mx-auto my-10">
-          <img
+          <Image
             src="/img/featured-thumbnail.png"
-            alt=""
-            className=" w-full rounded-lg"
+            alt="Thumbnail"
+            className=" w-full rounded-lg "
+            width="100%"
+            height="50%"
+            layout="responsive"
+            // objectFit="contain"
           />
         </div>
         <div className=" md:w-8/12 mx-auto leading-relaxed text-justify">
